@@ -1,0 +1,60 @@
+<app-dashboard></app-dashboard>
+<!--<div class="service-requests">-->
+<!--  <h2>Service Requests</h2>-->
+<!--  <table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--      <th class="dd">Service Request Date</th>-->
+<!--      <th class="dd">Service Request By</th>-->
+<!--      <th class="dd">Phone Number</th>-->
+<!--      <th class="dd">Email Address</th>-->
+<!--      <th class="dd">Service Requested</th>-->
+<!--      <th class="dd">Other Details</th>-->
+<!--      <th class="dd">Actions</th> &lt;!&ndash; Action column for the button &ndash;&gt;-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr *ngFor="let request of serviceRequests">-->
+<!--      <td>{{ request.serviceRequestDate }}</td>-->
+<!--      <td>{{ request.serviceRequestBy }}</td>-->
+<!--      <td>{{ request.phoneNumber }}</td>-->
+<!--      <td>{{ request.email }}</td>-->
+<!--      <td>{{ request.serviceRequested }}</td>-->
+<!--      <td>{{ request.otherDetails }}</td>-->
+<!--      <td>-->
+<!--        <button (click)="showForm(request)">View Details</button>-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--</div>-->
+
+  <div class="service-requests">
+    <h2>Service Requests</h2>
+    <table>
+      <thead>
+      <tr>
+        <th class="dd">Service Request Date</th>
+        <th class="dd">Service Request By</th>
+        <th class="dd">Phone Number</th>
+        <th class="dd">Email Address</th>
+        <th class="dd">Service Requested</th>
+        <th class="dd">Other Details</th>
+        <th class="dd">Actions</th> <!-- Action column for the button -->
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let request of serviceRequests">
+        <td>{{ request.serviceRequestDate }}</td>
+        <td>{{ request.serviceRequestBy }}</td>
+        <td>{{ request.phoneNumber }}</td>
+        <td>{{ request.email }}</td>
+        <td>{{ request.serviceRequested }}</td>
+        <td>{{ request.otherDetails }}</td>
+        <td>
+          <button (click)="showForm(request)">View Details</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

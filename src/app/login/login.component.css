@@ -1,0 +1,289 @@
+/*.animated-title {*/
+/*  text-align: center;*/
+/*  position: absolute;*/
+/*  top: 120px; !* Adjust the top position as needed *!*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*}*/
+
+/*.animated-title h1 {*/
+/*  font-size: 3em; !* Adjust font size as needed *!*/
+/*  color: #fff; !* Text color *!*/
+/*  position: relative;*/
+/*  animation: titleAnimation 2s ease forwards;*/
+/*}*/
+
+/*@keyframes titleAnimation {*/
+/*  0% {*/
+/*    opacity: 0;*/
+/*    transform: translateY(-50px);*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 1;*/
+/*    transform: translateY(0);*/
+/*  }*/
+/*}*/
+.animated-title {
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+.block-letter {
+  display: inline-block;
+  font-size: 8em; /* Adjust font size as needed */
+  width: 100px; /* Adjust width of each block letter */
+  height: 100px; /* Adjust height of each block letter */
+  line-height: 110px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  margin: 0 0px; /* Adjust margin between letters */
+  border-radius: 10px; /* Add rounded corners */
+  font-weight: bold; /* Make the letters thicker */
+  opacity: 0; /* Initially hide the letters */
+  animation: typewriter 0.5s forwards, cursor-move 0.5s steps(1) infinite; /* Typewriter animation */
+}
+
+.d {
+  color: #FF6B6B; /* Pink for letter D */
+}
+
+.o {
+  color: #FFA07A; /* Light orange for letter o */
+}
+
+.c {
+  color: #FF7F50; /* Coral for letter c */
+}
+
+.C {
+  color: #FF6347; /* Tomato for letter C */
+}
+
+.a {
+  color: #FFB6C1; /* Light pink for letter a */
+}
+
+.r {
+  color: #FF4500; /* Orange red for letter r */
+}
+
+.e {
+  color: #FF8C00; /* Dark orange for letter e */
+}
+
+/* Typewriter animation */
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Cursor move animation */
+@keyframes cursor-move {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(20%);
+  }
+}
+
+/* Delay animation for each letter */
+.block-letter:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.block-letter:nth-child(2) {
+  animation-delay: 1.0s;
+}
+.block-letter:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.block-letter:nth-child(4) {
+  animation-delay: 2.0s;
+}
+.block-letter:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.block-letter:nth-child(6) {
+  animation-delay: 3.0s;
+}
+.block-letter:nth-child(7) {
+  animation-delay: 3.5s;
+}
+
+/* Cursor */
+.animated-title::after {
+  content: '|'; /* Cursor symbol */
+  display: inline-block;
+  width: 0.5em; /* Adjust width as needed */
+  height: 1em; /* Adjust height as needed */
+  animation: cursor-blink 0.5s infinite;
+}
+
+/* Cursor blink animation */
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+  /*background-image:*/
+  /*  linear-gradient(to right, blue, #0074D9) !* Blue for letter D *!,*/
+  /*  linear-gradient(to right, #0074D9, #7FDBFF) !* Blue to sky blue for letter o *!,*/
+  /*  linear-gradient(to right, #7FDBFF, #3D9970) !* Sky blue to sea blue for letter c *!,*/
+  /*  linear-gradient(to right, #3D9970, #2E8B57) !* Sea blue to sea green for letter a *!,*/
+  /*  linear-gradient(to right, #2E8B57, #2E8B57) !* Sea green for letter r *!,*/
+  /*  linear-gradient(to right, #2E8B57, #2E8B57); !* Sea green for letter e *!*/
+  /*background-clip: text; !* Clip the text to the background *!*/
+  /*-webkit-background-clip: text; !* For Safari *!*/
+  /*text-shadow:*/
+  /*  0 0 0 #0074D9, !* Blue shadow for letter D *!*/
+  /*  0 0 0 #0074D9, !* Blue shadow for letter o *!*/
+  /*  0 0 0 #7FDBFF, !* Sky blue shadow for letter c *!*/
+  /*  0 0 0 #3D9970, !* Sea blue shadow for letter a *!*/
+  /*  0 0 0 #2E8B57, !* Sea green shadow for letter r *!*/
+  /*  0 0 0 #2E8B57; !* Sea green shadow for letter e *!*/
+
+
+
+
+
+/*.d {*/
+/*  background-color: skyblue; !* Color for letter D *!*/
+/*  border-color: skyblue; !* Border color for letter D *!*/
+/*}*/
+
+/*.d {*/
+/*  background-image: linear-gradient(to bottom, #0074D9, #7FDBFF, #3D9970); !* Blue to sky blue to sea blue *!*/
+/*}*/
+
+/*.o {*/
+/*  background-image: linear-gradient(to bottom, #7FDBFF, #3D9970, #2E8B57); !* Sky blue to sea blue to sea green *!*/
+/*}*/
+
+/*.c {*/
+/*  background-image: linear-gradient(to bottom, #3D9970, #2E8B57, #3CB371); !* Sea blue to sea green *!*/
+/*}*/
+
+
+
+
+
+
+.blue-purple-mesh {
+    background-color: #000066;
+    background-image: linear-gradient(315deg, #000066 0%, #4d0099 74%);
+    width: 100%;
+    min-height: 100vh;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  .login-container, .otp-container {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 38%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    /* margin-top: 50px; */
+  }
+
+
+
+  .step-container {
+    padding: 20px;
+    }
+
+    .step-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    .form-group {
+    margin-bottom: 20px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e1919;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        }
+
+        button {
+        width: 100%;
+        padding: 12px;
+        background-color: #00a7ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+
+        button:disabled {
+        background-color: #90bfe8;
+        cursor: not-allowed;
+        }
+
+        /* Apply the same styles to OTP container */
+        /*.otp-container {*/
+        /*    background-color: rgba(255, 255, 255, 0.8);*/
+        /*    padding: 50px;*/
+        /*    box-sizing: border-box;*/
+        /*    width: 40%;*/
+        /*    height: 100%;*/
+        /*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+        /*    border-radius: 8px;*/
+        /*    overflow: hidden;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        .otp-container.show {
+        display: block;
+        }
+
+        .step-header{
+        padding: 20px;
+        }
+
+        .otp-inputs {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .otp-inputs input {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 5px;
+        }
+

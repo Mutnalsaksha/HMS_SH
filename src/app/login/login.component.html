@@ -1,0 +1,59 @@
+
+
+<div class="blue-purple-mesh">
+<!--  <div class="animated-title">-->
+<!--    <div class="block-letter d">D</div>-->
+<!--    <div class="block-letter o">o</div>-->
+<!--    <div class="block-letter c">c</div>-->
+<!--    <div class="block-letter C">C</div>-->
+<!--    <div class="block-letter a">a</div>-->
+<!--    <div class="block-letter r">r</div>-->
+<!--    <div class="block-letter e">e</div>-->
+<!--  </div>-->
+
+
+  <div class="login-container" *ngIf="showLoginContainer">
+      <div class="step-container">
+        <div class="step-header">Enter Mobile Number</div>
+        <form id="mobileForm" (ngSubmit)="navigateToOTP()" #mobileForm="ngForm">
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" [(ngModel)]="mobileNumber" #mobileNumberField="ngModel" required pattern="[0-9]{10}">
+          </div>
+          <button type="submit" [disabled]="!mobileForm.valid">Get OTP</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="login-container otp-container" *ngIf="showOTPForm">
+      <div class="step-container">
+        <div class="step-header">Enter OTP</div>
+        <form id="otpForm" (ngSubmit)="login()" #otpForm="ngForm">
+          <div class="form-group">
+            <label for="otp1">OTP:</label>
+            <div class="otp-inputs">
+                <input type="text" id="otp1" name="otp1" maxlength="1" [(ngModel)]="otp[0]"
+                   (input)="moveToNextInput($event, 1)" required pattern="[0-9]">
+
+            <input type="text" id="otp2" name="otp2" maxlength="1" [(ngModel)]="otp[1]"
+                   (input)="moveToNextInput($event, 2)" required pattern="[0-9]">
+
+            <input type="text" id="otp3" name="otp3" maxlength="1" [(ngModel)]="otp[2]"
+                   (input)="moveToNextInput($event, 3)" required pattern="[0-9]">
+
+            <input type="text" id="otp4" name="otp4" maxlength="1" [(ngModel)]="otp[3]"
+                   (input)="moveToNextInput($event, 4)" required pattern="[0-9]">
+
+            <input type="text" id="otp5" name="otp5" maxlength="1" [(ngModel)]="otp[4]"
+                   (input)="moveToNextInput($event, 5)" required pattern="[0-9]">
+
+            <input type="text" id="otp6" name="otp6" maxlength="1" [(ngModel)]="otp[5]"
+                   (input)="moveToNextInput($event, 6)" required pattern="[0-9]">
+            </div>
+          </div>
+          <br>
+          <button type="submit" [disabled]="!otpForm.valid" routerLink="/service-requests-list">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+/* Custom purple background color */
+.bg-custom-purple {
+  background-color: #6f42c1; /* Your desired purple color */
+}
+
+/* Style for navbar links text color */
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white; /* Set text color to white */
+}
+
+/* Style for search button color */
+.btn-search {
+  color: white; /* Set text color to white */
+  background-color: #007bff; /* Set button background color to Bootstrap's default blue */
+  border-color: #007bff; /* Set border color to Bootstrap's default blue */
+}
+
+/* Hover state for search button */
+.btn-search:hover {
+  color: white; /* Set text color to white */
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  border-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Style for transparent search input */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.5); /* Set background color with 50% opacity */
+  padding: 0.20rem;
+}
+
+/* Adjust the position of the search form */
+.form-search {
+  margin-right: 80px; /* Add some margin to the right side of the search form */
+}

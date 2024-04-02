@@ -1,0 +1,48 @@
+/* Add your CSS styles for the service requests list component here */
+.service-requests {
+  margin-top: 10px;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.service-requests {
+  z-index: 1; /* Ensure it's higher than the navbar and side panel */
+}
+
+
+.service-requests h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th.dd {
+  font-weight: bold;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
